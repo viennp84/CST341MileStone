@@ -46,7 +46,7 @@ public class User {
 		this.gender = 1;
 		this.email = "email";
 		this.phone = "";
-		this.username = "User name";
+		this.username = "";
 		this.lastName = "Last name";
 	}
 	

@@ -13,6 +13,12 @@
     	<put-attribute name="body" value="/WEB-INF/pages/displayUsers.jsp" />
 	</definition>
 -->
+    
+    <definition name="welcome" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/welcome.jsp" />
+	</definition>
+    
+    
     <definition name="*" extends="DefaultTemplate">
     	<put-attribute name="body" value="/WEB-INF/pages/{1}.jsp" />
     </definition>

@@ -8,4 +8,11 @@
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
 	</definition>
+	
+	<definition name="HomeTemplate" template="/WEB-INF/layouts/template/HomeTemplate.jsp">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="header" value="/WEB-INF/layouts/template/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
+	</definition>
 </tiles-definitions>
