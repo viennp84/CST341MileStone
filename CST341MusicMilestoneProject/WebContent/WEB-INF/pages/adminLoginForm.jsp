@@ -10,10 +10,10 @@
 <body>
 	<div class="login_form">
 		<img class="logo" src="../resources/images/emusic3.png" alt="logo">
-		<h2>Login</h2>
+		<h2>Administrator Login</h2>
 	
-		<form:form method="POST" modelAttribute="user"
-			action="userLogin">
+		<form:form method="POST" modelAttribute="admin"
+			action="adminLogin">
 			<table >
 				<tr>
 					<td><form:label class="label-login" path="username">Username</form:label></td>
@@ -33,7 +33,7 @@
 					<td colspan="2"><input class="button" type="submit"
 						value="Login" />
 						<div>
-							<a href="#">Sign up</a>
+							<a href="#">Forget your account?</a>
 						</div></td>
 
 				</tr>

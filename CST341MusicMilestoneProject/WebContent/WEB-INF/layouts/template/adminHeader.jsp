@@ -24,17 +24,27 @@
 				<li class="nav-item active"><a class="nav-link" href="#">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Favorite</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> User Management </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Search</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Add</a> 
+						<a class="dropdown-item" href="#">Update</a>
+					</div></li>
+				<li class="nav-item"><a class="nav-link" href="#">Hot music</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> Playlist </a>
+					aria-expanded="false"> Music Management </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Playlist 1</a> 
-						<a class="dropdown-item" href="#">Playlist 2</a>
+						<a class="dropdown-item" href="#">Search</a> 
+						<a class="dropdown-item" href="#">Add library</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Playlist 3</a>
+						<a class="dropdown-item" href="#">Update</a>
 					</div></li>
 				<li class="nav-item"><a class="nav-link" href="#">Hot music</a>
 				</li>
@@ -46,9 +56,7 @@
 			</form:form>
 			<h4>Hi, Vien</h4>
 			<a class="nav-link" href="#">Profile</a> | <a class="nav-link"
-				href="#">Logout</a> | <a class="nav-link"
-				href="#">Admin Page</a>
-
+				href="#">Logout</a>
 		</div>
 	</nav>
 

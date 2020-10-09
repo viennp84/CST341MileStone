@@ -15,4 +15,11 @@
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
 	</definition>
+	
+	<definition name="AdminTemplate" template="/WEB-INF/layouts/template/adminTemplate.jsp">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="header" value="/WEB-INF/layouts/template/adminHeader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
+	</definition>
 </tiles-definitions>
