@@ -10,7 +10,7 @@
 <body>
 	<div class="form">
 		<img class="logo" src="../resources/images/emusic3.png" alt="logo">
-		<h2>Login</h2>
+		<h2>User Login</h2>
 	
 		<form:form method="POST" modelAttribute="user"
 			action="userLogin">

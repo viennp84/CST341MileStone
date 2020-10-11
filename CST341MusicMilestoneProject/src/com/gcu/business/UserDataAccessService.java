@@ -26,7 +26,7 @@ public class UserDataAccessService implements DataAccessInterface<User>, Securit
 	@Override
 	public List<User> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return userDao.findAll();
 	}
 
 	@Override

@@ -8,7 +8,7 @@
 <title>Login Page</title>
 </head>
 <body>
-	<div class="login_form">
+	<div class="form">
 		<img class="logo" src="../resources/images/emusic3.png" alt="logo">
 		<h2>Administrator Login</h2>
 	
@@ -16,17 +16,17 @@
 			action="adminLogin">
 			<table >
 				<tr>
-					<td><form:label class="label-login" path="username">Username</form:label></td>
+					<td><form:label class="label-form" path="username">Username</form:label></td>
 				</tr>
 				<tr>
-					<td><form:input class="login_input" path="username"
+					<td><form:input class="input-form" path="username"
 							placeholder="Enter username" /></td>
 				</tr>
 				<tr>
-					<td><form:label class="label-login" path="password">Password</form:label></td>
+					<td><form:label class="label-form" path="password">Password</form:label></td>
 				</tr>
 				<tr>
-					<td><form:password class="login_input" path="password"
+					<td><form:password class="input-form" path="password"
 							placeholder="Enter password" /></td>
 				</tr>
 				<tr class="align_login_button">

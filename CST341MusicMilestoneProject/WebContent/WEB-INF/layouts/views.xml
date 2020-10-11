@@ -21,6 +21,13 @@
      <definition name="admin" extends="AdminTemplate">
     	<put-attribute name="body" value="/WEB-INF/pages/admin.jsp" />
 	</definition>
+	
+	<definition name="adminSearchUser" extends="AdminTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/adminSearchUser.jsp" />
+	</definition>
+		<definition name="displayAdminSearchUsers" extends="AdminTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/displayAdminSearchUsers.jsp" />
+	</definition>
     
     <definition name="*" extends="DefaultTemplate">
     	<put-attribute name="body" value="/WEB-INF/pages/{1}.jsp" />

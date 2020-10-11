@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import com.gcu.model.User;
 
@@ -26,8 +27,31 @@ public class UserDataAccessObject {
 	String password = "jc9sn5zc0pgd15mj";
 
 	public List<User> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		/*
+		 * Search user with the firstname, lastname, email, phone, username, password, gender into
+		 * the table_user
+		 */
+		List<User> list = new ArrayList<User>();
+		String sql1 = "SELECT  firstname, lastname, email, phone, username, gender FROM  table_user LIMIT 20 ";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			/* Connecting to the database */
+			conn = DriverManager.getConnection(url, username, password);
+			PreparedStatement st = conn.prepareStatement(sql1);
+			ResultSet rs = st.executeQuery();
+			
+			while(rs.next()) {
+				list.add(new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),"", rs.getInt(6)));
+			}
+			conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return list;
 	}
 
 	/*m

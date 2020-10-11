@@ -29,14 +29,30 @@ public class AdminController {
 	DataAccessInterface<User> dataAccessService = new UserDataAccessService();
 	SecurityInterface<User> securityService = new UserDataAccessService();
 
-	/*Dislay login form for user*/
+	/*Dislay login form for admin*/
 	@RequestMapping(path = "/login", method = RequestMethod.GET)
 	public ModelAndView displayLoginForm() {
 
 		ModelAndView modelAndView = new ModelAndView("adminLoginForm", "admin", new Admin());
 		return modelAndView;
 	}
+	
+	/*Dislay search form for admin*/
+	@RequestMapping(path = "/search", method = RequestMethod.GET)
+	public ModelAndView displayAddUserForm() {
 
+		ModelAndView modelAndView = new ModelAndView("adminSearchUser", "user", new User());
+		return modelAndView;
+	}
+	
+	/*Dislay search result */
+	@RequestMapping(path = "/searchUser", method = RequestMethod.POST)
+	public ModelAndView displaySearchResult(@ModelAttribute("user") User user) {
+		
+		ModelAndView modelAndView = new ModelAndView("displayAdminSearchUsers", "users", dataAccessService.findAll());
+		
+		return modelAndView;
+	}
 	/* User login calling the login business */
 	@RequestMapping(path = "/adminLogin", method = RequestMethod.POST)
 	public ModelAndView userLogin(@ModelAttribute("admin") Admin admin) {

@@ -27,9 +27,9 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> User Management </a>
+					aria-expanded="false"> User </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Search</a>
+						<a class="dropdown-item" href="../admin/search">Search</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Add</a> 
 						<a class="dropdown-item" href="#">Update</a>
@@ -39,7 +39,7 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> Music Management </a>
+					aria-expanded="false"> Music </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Search</a> 
 						<a class="dropdown-item" href="#">Add library</a>

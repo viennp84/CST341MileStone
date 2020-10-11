@@ -47,14 +47,14 @@ public class User {
 		this.email = "email";
 		this.phone = "";
 		this.username = "";
-		this.lastName = "Last name";
+		this.password = "";
 	}
 	
 	public User(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-	public User(String firstName, String lastName, int gender, String email, String phone, String username, String password) {
+	public User(String firstName, String lastName,String email,  String phone, String username, String password, int gender) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;

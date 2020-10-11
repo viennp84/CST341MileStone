@@ -18,10 +18,10 @@
 	<tiles:insertAttribute name="header" />
 
 	<!-- Body Page -->
-<%-- 	<div>
+	<div>
 		<tiles:insertAttribute name="body" />
 	</div>
- --%>
+
 	<!-- Footer Page -->
 	<tiles:insertAttribute name="footer" />
 </body>
