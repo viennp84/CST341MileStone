@@ -4,7 +4,6 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<!-- <title>CST-341 In-Class Activity</title> -->
 	
 	<spring:url value="/resources/css/main.css" var="mainCss" />
 	<spring:url value="/resources/js/main.js" var="mainJs" />

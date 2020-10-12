@@ -13,41 +13,35 @@
 			<table>
 				<tr>
 					<td><form:label class="label-form" path="firstName">First Name:</form:label></td>
-					<td><form:input class="input-form" path="firstName" />
-						<form:errors path="firstName" /></td>
+					<td><form:input class="input-form" path="firstName" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="lastName">Last Name:</form:label></td>
-					<td><form:input class="input-form" path="lastName" />
-						<form:errors path="lastName" /></td>
+					<td><form:input class="input-form" path="lastName" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="gender">Gender:</form:label></td>
-					<td><form:radiobutton value="1" path="gender" />
-						<form:errors path="gender" />Male <form:radiobutton value="0"
-							path="gender" />
-						<form:errors path="gender" />Female</td>
+					<td>
+						<form:radiobutton value="1" path="gender" />Male 
+						<form:radiobutton value="0"	path="gender" />Female
+					</td>
 
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="phone">Phone Number:</form:label></td>
-					<td><form:input class="input-form" path="phone" />
-						<form:errors path="phone" /></td>
+					<td><form:input class="input-form" path="phone" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="email">Email:</form:label></td>
-					<td><form:input class="input-form" path="email" />
-						<form:errors path="email" /></td>
+					<td><form:input class="input-form" path="email" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="username">User Name:</form:label></td>
-					<td><form:input class="input-form" path="username" />
-						<form:errors path="username" /></td>
+					<td><form:input class="input-form" path="username" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="password">Password:</form:label></td>
-					<td><form:password class="input-form" path="password" />
-						<form:errors path="password" /></td>
+					<td><form:password class="input-form" path="password" /></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" value="Submit" /></td>
@@ -56,6 +50,7 @@
 			<br />
 			<form:errors path="*" />
 		</form:form>
+		<a href="../user/login">Login</a>
 	</div>
 </body>
 </html>

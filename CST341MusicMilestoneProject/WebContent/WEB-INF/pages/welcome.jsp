@@ -5,6 +5,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Welcome Page</title>
-
-
+</head>
+	<body>
+	<h2>Welcome to the main page</h2>
+	<h4>This is where all of the most popular songs will show up on screen</h4>
+	</body>
 </html>

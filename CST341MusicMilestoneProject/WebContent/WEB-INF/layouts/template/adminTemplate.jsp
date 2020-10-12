@@ -14,7 +14,7 @@
 </head>
 
 <body class="body">
-	<!-- Header -->
+	<!-- Header 
 	<tiles:insertAttribute name="header" />
 
 	<!-- Body Page -->

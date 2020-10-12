@@ -10,7 +10,7 @@ import java.util.List;
 import com.gcu.model.User;
 
 /*
- * Vien Nguyen
+ * Vien Nguyen, Roland Steinebrunner
  * CST341
  * 10/03/2020
  * User Data Access Object

@@ -38,17 +38,19 @@ public class UserController {
 
 	/* Add user by calling the create user business */
 	@RequestMapping(path = "/addUser", method = RequestMethod.POST)
-	public ModelAndView addUser(@Valid @ModelAttribute("user") User user, BindingResult result) {
+	public ModelAndView addUser(@Valid@ModelAttribute("user") User user, BindingResult result) {
 
-		/* Check if the User is created */
-		boolean isRegested = dataAccessService.create(user);
-		if (isRegested) {
-			return new ModelAndView("welcome", "user", user);
-		} else {
+		if (result.hasErrors()) {
 			return new ModelAndView("addUser", "user", user);
-		}
+		}/* Check if the User is created */
+		boolean isRegistered = dataAccessService.create(user);
+		if(isRegistered)
+			return new ModelAndView("welcome", "user", user);
+		else
+			return new ModelAndView("addUserFailed","user",user);
+
 	}
-	/*Dislay login form for user*/
+	/*Display login form for user*/
 	@RequestMapping(path = "/login", method = RequestMethod.GET)
 	public ModelAndView displayLoginForm() {
 
@@ -58,13 +60,19 @@ public class UserController {
 
 	/* User login calling the login business */
 	@RequestMapping(path = "/userLogin", method = RequestMethod.POST)
-	public ModelAndView userLogin(@ModelAttribute("user") User user) {
+	public ModelAndView userLogin(@Valid@ModelAttribute("user") User user, BindingResult result) {
 		/* Check if the User is created */
-		boolean isValid = securityService.login(user);
-		if (isValid) {
-			return new ModelAndView("welcome", "user", user);
-		} else {
+		
+		if (result.hasErrors()) 
 			return new ModelAndView("login", "user", user);
-		}
+		
+		boolean isValid = securityService.login(user);
+		if(isValid)
+			return new ModelAndView("welcome", "user", user);
+		else
+			return new ModelAndView("loginFailed","user",user);
+			
+			
+		
 	}
 }

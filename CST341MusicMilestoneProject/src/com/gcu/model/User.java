@@ -1,10 +1,11 @@
 package com.gcu.model;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /*
- * Vien Nguyen
+ * Vien Nguyen, Roland Steinebrunner
  * CST341
  * 10/03/2020
  * User Class
@@ -12,26 +13,41 @@ import javax.validation.constraints.Size;
  */
 public class User {
 	
-	@NotNull(message="First name cannot be null")
-	@Size(min=2, max=30, message="First name must be between 2 and 30 characters")
 	/*First name*/
+	
+	@NotNull(message="First name cannot be empty")
+	@Size(min=1, max=30, message="First Name cannot be more than 30 characters")
 	private String firstName;
-	@NotNull(message="Last name cannot be null")
-	@Size(min=2, max=30, message="Last name must be between 2 and 30 characters")
+	
 	/*Last name*/
+	@NotNull(message="Last name cannot be empty")
+	@Size(min=1, max=30, message="Last Name cannot be more than 30 characters")
 	private String lastName;
-	@NotNull(message="Gender cannot be null")
-	/*User name*/
+	
+	/*Username*/
+	@NotNull(message="Username cannot be empty")
+	@Size(min=1, max=30, message="Username cannot be more than 30 characters")
 	private String username;
-	/*Pass word*/
+	
+	/*Password*/
+	@NotNull(message="Password cannot be empty")
+	@Size(min=8, max=30, message="Password must be between 8 and 30 characters")
 	private String password;
-	/*Phone numbere*/
+	
+	/*Phone number*/
+	@NotNull(message="Phone number cannot be empty")
+	@Size(min=10, max=10, message="Phone number must be ten digits")
 	private String phone;
+	
 	/*Email*/
+	@NotNull(message="Email cannot be empty")
+	@Size(min=1,message="Email cannot be blank")
 	private String email;
+	
 	/*Gender*/
 	private int gender;
 	
+	//Getters and Setters
 	public int getGender() {
 		return gender;
 	}
@@ -41,10 +57,10 @@ public class User {
 	}
 
 	public User() {
-		this.firstName = "First name";
-		this.lastName = "Last name";
-		this.gender = 1;
-		this.email = "email";
+		this.firstName = "";
+		this.lastName = "";
+		this.gender = 0;
+		this.email = "";
 		this.phone = "";
 		this.username = "";
 		this.password = "";

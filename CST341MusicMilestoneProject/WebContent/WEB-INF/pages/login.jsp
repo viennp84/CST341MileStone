@@ -15,19 +15,21 @@
 		<form:form method="POST" modelAttribute="user"
 			action="userLogin">
 			<table >
+				<form:hidden path="firstName" value="Default" />
+				<form:hidden path="lastName" value="Default" />
+				<form:hidden path="email" value="default@default.com" />
+				<form:hidden path="phone" value="1234567890" />
 				<tr>
-					<td><form:label class="label-form" path="username">Username</form:label></td>
+					<td><form:label class="label-form" path="username" >Username</form:label></td>
 				</tr>
 				<tr>
-					<td><form:input class="input-form" path="username"
-							placeholder="Enter username" /></td>
+					<td><form:input class="input-form" path="username" placeholder="Enter username" /></td>
 				</tr>
 				<tr>
 					<td><form:label class="label-form" path="password">Password</form:label></td>
 				</tr>
 				<tr>
-					<td><form:password class="input-form" path="password"
-							placeholder="Enter password" /></td>
+					<td><form:password class="input-form" path="password" placeholder="Enter password" /></td>
 				</tr>
 				<tr class="align_login_button">
 					<td colspan="2"><input class="button" type="submit"
@@ -35,8 +37,9 @@
 						<div>
 							<a href="../user/add">Sign up</a>
 						</div></td>
-
+				
 				</tr>
+				<tr><td><form:errors path="*" /></td></tr>
 			</table>
 			<br />
 		</form:form>
