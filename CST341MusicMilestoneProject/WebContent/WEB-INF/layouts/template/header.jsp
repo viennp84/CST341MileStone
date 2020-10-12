@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -44,8 +45,14 @@
 					placeholder="Search" aria-label="Search">
 				<form:button path="search" class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</form:button>
 			</form:form> -->
-			Welcome |
-			<a class="nav-link" href="../user/login">Login</a> | <a class="nav-link" href="../user/add">Register</a>
+			
+			<c:if test="${empty user.username}">
+			<a class="nav-link" href="../CST341MusicMilestoneProject/user/login">Login</a> | <a class="nav-link" href="../CST341MusicMilestoneProject/user/add">Register</a>
+			</c:if>
+			<c:if test="${not empty user.username}">
+			Welcome ${user.username}!  | <a class="nav-link" href="#">Logout</a>
+			</c:if>
+			
 
 		</div>
 	</nav>
