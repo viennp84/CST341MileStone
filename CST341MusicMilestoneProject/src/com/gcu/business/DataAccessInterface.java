@@ -2,8 +2,10 @@ package com.gcu.business;
 
 import java.util.List;
 
+import com.gcu.model.Artist;
+
 /*
- * Vien Nguyen
+ * Vien Nguyen, Roland Steinebrunner
  * CST341
  * 10/03/2020
  * User Data Access Interface
@@ -16,4 +18,6 @@ public interface DataAccessInterface <T> {
 	public boolean create(T t);
 	public boolean update(T t);
 	public boolean delete(T t);
+	public boolean deleteId(int id);
+	public T findById(int id);
 }

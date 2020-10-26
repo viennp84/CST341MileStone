@@ -18,6 +18,30 @@
     	<put-attribute name="body" value="/WEB-INF/pages/welcome.jsp" />
 	</definition>
 	
+	<definition name="addArtist" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/addArtist.jsp" />
+	</definition>
+	
+	<definition name="displayArtist" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/displayArtist.jsp" />
+	</definition>
+	
+	<definition name="addGenre" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/addGenre.jsp" />
+	</definition>
+	
+	<definition name="displayGenre" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/displayGenre.jsp" />
+	</definition>
+	
+	<definition name="addAlbum" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/addAlbum.jsp" />
+	</definition>
+	
+	<definition name="displayAlbum" extends="HomeTemplate">
+    	<put-attribute name="body" value="/WEB-INF/pages/displayAlbum.jsp" />
+	</definition>
+	
      <definition name="admin" extends="AdminTemplate">
     	<put-attribute name="body" value="/WEB-INF/pages/admin.jsp" />
 	</definition>

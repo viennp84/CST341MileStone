@@ -22,5 +22,44 @@
 			</list>
 		</property>
 	</bean>
+	
+	
+	<bean id="artistDataAccessObject" class="com.gcu.dao.ArtistDataAccessObject"> </bean>
+	<bean id="userDataAccessObject" class="com.gcu.dao.UserDataAccessObject"> </bean>
+	<bean id="genreDataAccessObject" class="com.gcu.dao.GenreDataAccessObject"> </bean>
+	<bean id="albumDataAccessObject" class="com.gcu.dao.AlbumDataAccessObject"> </bean>
+	
+	<bean id="albumDataAccessService" class="com.gcu.business.AlbumDataAccessService"> 
+		<property name="albumDataAccessObject" ref="albumDataAccessObject"/>
+	</bean>
+	
+	<bean id="artistDataAccessService" class="com.gcu.business.ArtistDataAccessService"> 
+		<property name="artistDataAccessObject" ref="artistDataAccessObject"/>
+	</bean>
+	
+	<bean id="genreDataAccessService" class="com.gcu.business.GenreDataAccessService"> 
+		<property name="genreDataAccessObject" ref="genreDataAccessObject"/>
+	</bean>
+	
+	
+	<bean id="securityService" class="com.gcu.business.UserDataAccessService">
+		<property name="userDataAccessObject" ref="userDataAccessObject"/>
+	</bean>
+	
+	<bean id="dataAccessService" class="com.gcu.business.UserDataAccessService"> 
+		<property name="userDataAccessObject" ref="userDataAccessObject"/>
+	</bean>
+	
+ 	
+  	<bean id="userController" class="com.gcu.controller.UserController" >
+		<property name="securityService" ref="securityService"/>
+		<property name="dataAccessService" ref="dataAccessService"/>
+		<property name="artistDataAccessService" ref="artistDataAccessService"/>
+		<property name="genreDataAccessService" ref="genreDataAccessService"/>
+		<property name="albumDataAccessService" ref="albumDataAccessService"/>
+	</bean>
+	
+	
+	
    
  </beans>

@@ -1,0 +1,159 @@
+
+.header{
+	position: fixed;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+/*footer*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.footer h5{
+	font-weight: 16px;
+}
+
+h1 {
+	color: white;
+}
+.mynav{
+    background-color: #D9D9D8 !important;
+}
+
+.mynav li{
+    font-size: 20px;
+}
+
+.mynav h4{
+    margin-left: 40px;
+}
+.logo{
+    width: 120px;
+    height: 80px;
+}
+.body {
+	background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.form{
+	position: fixed;
+	top: 250;
+	text-align: center;
+	left: calc(100%/2 - 160px); 
+	background-color: #FFFFE0;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+
+.form h2{
+	
+	font-size: 24px;
+	color: blue;
+}
+.artistDisplay{
+	position: fixed;
+	top: 70;
+	text-align: center;
+	left: calc(100%/2 - 160px); 
+	background-color: #FFFFE0;
+	border-radius: 5px;
+	padding: 10px 10px;
+	
+}
+
+.artistDisplay h2{
+	
+	font-size: 24px;
+	color: blue;
+}
+
+.button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 10px;
+	margin: 8px 0;
+	border: 1px;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px 10px;
+	border-radius: 2px;
+}
+
+.button:hover {
+	opacity: 0.7;
+	border-radius: 2px;
+}
+
+.input-form {
+	width: 300px;
+	height: 30px;
+	display: inline-block;
+	border: 1px;
+	background-color: #F5F5DC;
+	border-radius: 2px;
+}
+
+.label-form {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 0px;
+}
+
+
+
+/*Media formet*/
+.smed{
+    color: #fff;
+    font-size: 36px;
+    margin: 20px;
+}
+.smed i:hover{
+    color: #e42448;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.copyright{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 50px;   
+}
+
+#table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+table td, #table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#table tr:hover {
+	background-color: #ddd;
+}
+
+#table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+.edit{
+	width: 20px;
+}

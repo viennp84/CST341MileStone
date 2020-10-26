@@ -39,6 +39,35 @@
 					</div></li>
 				<li class="nav-item"><a class="nav-link" href="#">Music By Genre</a>
 				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Artist </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/viewArtists">Search</a> 
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/addArtistForm">Create</a>
+					</div>
+				</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Genre </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/viewGenres">Search</a> 
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/addGenreForm">Create</a>
+					</div>
+				</li>
+				</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Album </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/viewAlbums">Search</a> 
+						<a class="dropdown-item" href="/CST341MusicMilestoneProject/user/addAlbumForm">Create</a>
+					</div>
+				</li>
+				
 			</ul>
 			<!-- <form:form class="form-inline my-2 my-lg-0" action="#">
 				<input path=search"" class="form-control mr-sm-2" type="search"
